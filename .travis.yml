@@ -1,7 +1,5 @@
 language: swift
-
-before_install:
-    - gem install ios_ci
-    - brew install ios_sim
-
-script: ios_ci cedar --source-root $TRAVIS_BUILD_DIR --workspace Twitt.xcworkspace --scheme Twitt --build-path Build/Products
+osx_image: xcode8.3
+xcode_project: Twitt.xcodeproj
+xcode_scheme: Twitt
+xcode_sdk: iphonesimulator10.0
