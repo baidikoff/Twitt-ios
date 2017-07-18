@@ -1,5 +1,5 @@
-# Uncomment the next line to define a global platform for your project
 platform :ios, '10.0'
+inhibit_all_warnings!
 
 target 'Twitt' do
   
@@ -15,6 +15,10 @@ target 'Twitt' do
   pod 'Alamofire'
   pod 'PromiseKit/Alamofire'
 
+  pod 'TwitterKit'
+
+  pod 'SwiftyUserDefaults'
+  
   pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 
   target 'TwittTests' do
@@ -30,7 +34,6 @@ target 'Twitt' do
 
   target 'TwittUITests' do
     inherit! :search_paths
-    # Pods for testing
   end
 
 end

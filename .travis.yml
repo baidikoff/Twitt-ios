@@ -1,0 +1,7 @@
+language: swift
+
+before_install:
+    - gem install ios_ci
+    - brew install ios_sim
+
+script: ios_ci cedar --source-root $TRAVIS_BUILD_DIR --workspace Twitt.xcworkspace --scheme Twitt --build-path Build/Products

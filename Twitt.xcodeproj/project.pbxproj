@@ -10,6 +10,10 @@
 		36DB49614BB9090F91F0C3AC /* Pods_TwittUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B186FA05CF85AE234957DA76 /* Pods_TwittUITests.framework */; };
 		A8567C6F1F1A458D003BAF59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8567C6E1F1A458D003BAF59 /* AppDelegate.swift */; };
 		A8567C761F1A458D003BAF59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8567C751F1A458D003BAF59 /* Assets.xcassets */; };
+		A8567CA81F1EA6C0003BAF59 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8567CA71F1EA6C0003BAF59 /* Defaults.swift */; };
+		A8567CAA1F1EA749003BAF59 /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8567CA91F1EA749003BAF59 /* Twitter.swift */; };
+		A8567CAC1F1EAA58003BAF59 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8567CAB1F1EAA58003BAF59 /* LoginViewController.swift */; };
+		A8567CB21F1EAEA3003BAF59 /* TwittTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8567CB11F1EAEA3003BAF59 /* TwittTests.swift */; };
 		E6652B9E8ADDB291F7169FF9 /* Pods_Twitt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D816BEA0107C7677BB80290 /* Pods_Twitt.framework */; };
 		F587B740DF314FE0AF87F581 /* Pods_TwittTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C752D283858E0F02FF1C9146 /* Pods_TwittTests.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +48,10 @@
 		A8567C851F1A458D003BAF59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8567C8A1F1A458D003BAF59 /* TwittUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwittUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8567C901F1A458D003BAF59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8567CA71F1EA6C0003BAF59 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		A8567CA91F1EA749003BAF59 /* Twitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
+		A8567CAB1F1EAA58003BAF59 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A8567CB11F1EAEA3003BAF59 /* TwittTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittTests.swift; sourceTree = "<group>"; };
 		B186FA05CF85AE234957DA76 /* Pods_TwittUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwittUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA21250D1F62168EAADF6932 /* Pods-TwittUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwittUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwittUITests/Pods-TwittUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C752D283858E0F02FF1C9146 /* Pods_TwittTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwittTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +135,10 @@
 		A8567C6D1F1A458D003BAF59 /* Twitt */ = {
 			isa = PBXGroup;
 			children = (
+				A8567CA21F1EA21F003BAF59 /* Modules */,
+				A8567CA11F1EA21F003BAF59 /* Models */,
+				A8567C9E1F1EA21F003BAF59 /* Extensions */,
+				A8567CA01F1EA21F003BAF59 /* Global */,
 				A8567C6E1F1A458D003BAF59 /* AppDelegate.swift */,
 				A8567C751F1A458D003BAF59 /* Assets.xcassets */,
 				A8567C7A1F1A458D003BAF59 /* Info.plist */,
@@ -138,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				A8567C851F1A458D003BAF59 /* Info.plist */,
+				A8567CB11F1EAEA3003BAF59 /* TwittTests.swift */,
 			);
 			path = TwittTests;
 			sourceTree = "<group>";
@@ -148,6 +161,45 @@
 				A8567C901F1A458D003BAF59 /* Info.plist */,
 			);
 			path = TwittUITests;
+			sourceTree = "<group>";
+		};
+		A8567C9E1F1EA21F003BAF59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A8567CA01F1EA21F003BAF59 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				A8567CA71F1EA6C0003BAF59 /* Defaults.swift */,
+				A8567CA91F1EA749003BAF59 /* Twitter.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		A8567CA11F1EA21F003BAF59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A8567CA21F1EA21F003BAF59 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A8567CA41F1EA258003BAF59 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A8567CA41F1EA258003BAF59 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A8567CAB1F1EAA58003BAF59 /* LoginViewController.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +285,7 @@
 					A8567C7E1F1A458D003BAF59 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 76LJ97E96C;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A8567C6A1F1A458D003BAF59;
 					};
@@ -432,7 +485,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8567CAC1F1EAA58003BAF59 /* LoginViewController.swift in Sources */,
 				A8567C6F1F1A458D003BAF59 /* AppDelegate.swift in Sources */,
+				A8567CAA1F1EA749003BAF59 /* Twitter.swift in Sources */,
+				A8567CA81F1EA6C0003BAF59 /* Defaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +496,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8567CB21F1EAEA3003BAF59 /* TwittTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,11 +650,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 76LJ97E96C;
 				INFOPLIST_FILE = TwittTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baidikoff.TwittTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twitt.app/Twitt";
 			};
@@ -609,6 +668,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 76LJ97E96C;
 				INFOPLIST_FILE = TwittTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
