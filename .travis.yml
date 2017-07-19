@@ -3,3 +3,6 @@ osx_image: xcode8.3
 xcode_project: Twitt.xcodeproj
 xcode_scheme: Twitt
 xcode_sdk: iphonesimulator10.0
+
+before_script:
+    - pod repo update
