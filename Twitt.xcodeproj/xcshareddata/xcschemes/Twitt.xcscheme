@@ -20,6 +20,48 @@
                ReferencedContainer = "container:Twitt.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "97B24C3BF7A498996518247F525CAD92"
+               BuildableName = "Pods_Twitt.framework"
+               BlueprintName = "Pods-Twitt"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "25E735492BF5118044CB6B1E5CC1205E"
+               BuildableName = "Pods_TwittTests.framework"
+               BlueprintName = "Pods-TwittTests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C6F81780CFFB92344EB1363B68B859B0"
+               BuildableName = "Pods_TwittUITests.framework"
+               BlueprintName = "Pods-TwittUITests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -32,9 +74,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A8567C7E1F1A458D003BAF59"
-               BuildableName = "TwittTests.xctest"
-               BlueprintName = "TwittTests"
+               BlueprintIdentifier = "A8567C891F1A458D003BAF59"
+               BuildableName = "TwittUITests.xctest"
+               BlueprintName = "TwittUITests"
                ReferencedContainer = "container:Twitt.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +84,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A8567C891F1A458D003BAF59"
-               BuildableName = "TwittUITests.xctest"
-               BlueprintName = "TwittUITests"
+               BlueprintIdentifier = "A8567C7E1F1A458D003BAF59"
+               BuildableName = "TwittTests.xctest"
+               BlueprintName = "TwittTests"
                ReferencedContainer = "container:Twitt.xcodeproj">
             </BuildableReference>
          </TestableReference>
