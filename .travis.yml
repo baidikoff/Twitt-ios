@@ -4,5 +4,6 @@ xcode_project: Twitt.xcodeproj
 xcode_scheme: Twitt
 xcode_sdk: iphonesimulator10.0
 
-before_script:
+install:
     - pod repo update
+    - pod install
