@@ -5,12 +5,12 @@ target 'Twitt' do
   
   use_frameworks!
 
-  pod 'RxSwift', '~> 3.0'
-  pod 'RxCocoa', '~> 3.0'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   pod 'Texture'
   pod 'RealmSwift'
-  pod 'PromiseKit', '~> 4.0'
+  pod 'PromiseKit'
 
   pod 'Alamofire'
   pod 'PromiseKit/Alamofire'
@@ -24,8 +24,8 @@ target 'Twitt' do
   target 'TwittTests' do
     inherit! :search_paths
     
-    pod 'RxBlocking', '~> 3.0'
-    pod 'RxTest', '~> 3.0'
+    pod 'RxBlocking'
+    pod 'RxTest'
     
     pod 'Quick'
     pod 'Nimble'    

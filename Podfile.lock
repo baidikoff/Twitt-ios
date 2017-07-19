@@ -62,14 +62,14 @@ DEPENDENCIES:
   - Alamofire
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - Nimble
-  - PromiseKit (~> 4.0)
+  - PromiseKit
   - PromiseKit/Alamofire
   - Quick
   - RealmSwift
-  - RxBlocking (~> 3.0)
-  - RxCocoa (~> 3.0)
-  - RxSwift (~> 3.0)
-  - RxTest (~> 3.0)
+  - RxBlocking
+  - RxCocoa
+  - RxSwift
+  - RxTest
   - SwiftyUserDefaults
   - Texture
   - TwitterKit
@@ -103,6 +103,6 @@ SPEC CHECKSUMS:
   TwitterCore: 8ce250be1eb34633a0e6acc89520d4165ec52c10
   TwitterKit: 202404be71aadd81d19f677b34579fe77d9cb67e
 
-PODFILE CHECKSUM: 9cd8bd0d6d8106be1e30836bb9f8f5ca02f7a4b1
+PODFILE CHECKSUM: 69b65c96e37b509a6e4d46e085a9a673071a60ae
 
 COCOAPODS: 1.2.1
