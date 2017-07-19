@@ -7,3 +7,6 @@ xcode_sdk: iphonesimulator10.0
 install:
     - pod repo update
     - pod install
+
+script:
+    - xctool -project Twitt.xcodeproj -scheme Twitt build test
