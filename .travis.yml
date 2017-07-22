@@ -1,12 +1,10 @@
 language: swift
 osx_image: xcode8.3
-xcode_project: Twitt.xcodeproj
-xcode_scheme: Twitt
-xcode_sdk: iphonesimulator10.0
+os: osx
 
 install:
     - pod repo update
     - pod install
 
 script:
-    - xcodebuild clean build test -arch i386 -sdk iphonesimulator -workspace Twitt.xcworkspace -scheme Twitt CODE_SIGNING_REQUIRED=NO | xcpretty
+    - xcodebuild -workspace Twitt.xcworkspace -scheme Twitt test | xcpretty
