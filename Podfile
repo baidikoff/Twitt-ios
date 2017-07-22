@@ -5,9 +5,6 @@ target 'Twitt' do
   
   use_frameworks!
 
-  pod 'RxSwift'
-  pod 'RxCocoa'
-
   pod 'Texture'
   pod 'RealmSwift'
   pod 'PromiseKit'
@@ -23,9 +20,6 @@ target 'Twitt' do
 
   target 'TwittTests' do
     inherit! :search_paths
-    
-    pod 'RxBlocking'
-    pod 'RxTest'
     
     pod 'Quick'
     pod 'Nimble'    
