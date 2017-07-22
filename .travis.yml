@@ -9,4 +9,4 @@ install:
     - pod install
 
 script:
-    - xcodebuild clean build -sdk iphonesimulator -project Twitt.xcodeproj -scheme Twitt CODE_SIGNING_REQUIRED=NO
+    - xcodebuild clean build -arch i386 -sdk iphonesimulator -workspace Twitt.xcworkspace  -scheme Twitt CODE_SIGNING_REQUIRED=NO
