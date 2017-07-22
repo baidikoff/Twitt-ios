@@ -9,4 +9,4 @@ install:
     - pod install
 
 script:
-    - xcodebuild clean build test -arch i386 -sdk iphonesimulator -workspace Twitt.xcworkspace -scheme Twitt | xcpretty
+    - xcodebuild clean build test -arch i386 -sdk iphonesimulator -workspace Twitt.xcworkspace -scheme Twitt CODE_SIGNING_REQUIRED=NO | xcpretty
