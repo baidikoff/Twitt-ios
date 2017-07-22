@@ -7,4 +7,4 @@ install:
     - pod install
 
 script:
-    - xcodebuild -workspace Twitt.xcworkspace -scheme Twitt -destination 'platform=iOS Simulator,name=iPhoneSE,OS=10.0' test | xcpretty
+    - xcodebuild -workspace Twitt.xcworkspace -scheme Twitt -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.0' test | xcpretty
